@@ -46,6 +46,20 @@ const GamePlayer = () => {
       "knife-attacks": `${base}games/Knife Attacks/index.html`,
       "3m": `${base}games/3m/index.html`,
       "4-2": `${base}games/4_2/index.html`,
+      "tower": `${base}games/tower_game-master/index.html`,
+      "js-racer": `${base}games/javascript-racer-master/index.html`,
+      "tic-tac-toe": `${base}games/tic-tac-toe/dist/index.html`,
+      "2048": `${base}games/2048-master/index.html`,
+      "hextris": `${base}games/hextris-gh-pages/index.html`,
+      "snake": `${base}games/snake/index.html`,
+      "space-invaders": `${base}games/SpaceInvaders-master/index.html`,
+      "duck-hunt": `${base}games/DuckHunt-JS-master/dist/index.html`,
+      "breaklock": `${base}games/breaklock-master/index.html`,
+      "alien-invasion": `${base}games/AlienInvasion-master/index.html`,
+      "candyjam": `${base}games/candyjam-master/index.html`,
+      "canvas-tetris": `${base}games/canvas-tetris-master/index.html`,
+      "last-colony": `${base}games/last-colony-master/index.html`,
+      "radius-raid": `${base}games/radius-raid-js13k-master/index.html`,
     };
     const url = gameUrls[id] || null;
     console.log('Base URL:', base);

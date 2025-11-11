@@ -66,14 +66,14 @@ const FilterMenu = ({ isOpen, onClose, onFilterChange }: FilterMenuProps) => {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 transition-opacity"
+          className="fixed inset-0 bg-black/50 z-[60] transition-opacity"
           onClick={onClose}
         />
       )}
 
       {/* Slider Menu */}
       <div
-        className={`fixed right-0 top-0 h-full w-80 bg-card border-l border-border shadow-lg transform transition-transform duration-300 z-50 ${
+        className={`fixed right-0 top-0 h-full w-80 bg-card border-l border-border shadow-lg transform transition-transform duration-300 z-[70] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -92,7 +92,7 @@ const FilterMenu = ({ isOpen, onClose, onFilterChange }: FilterMenuProps) => {
           </div>
 
           {/* Filter Content */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-6">
+          <div className="flex-1 overflow-y-auto p-4 pb-40 space-y-6">
             {/* Search */}
             <div className="space-y-2">
               <label className="text-sm font-semibold text-foreground">Search</label>
@@ -149,8 +149,8 @@ const FilterMenu = ({ isOpen, onClose, onFilterChange }: FilterMenuProps) => {
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="border-t border-border p-4 space-y-2">
+          {/* Footer - Sticky and above bottom nav */}
+          <div className="sticky bottom-16 md:bottom-0 border-t border-border p-4 space-y-2 bg-card">
             <Button
               onClick={handleReset}
               variant="outline"
@@ -160,9 +160,9 @@ const FilterMenu = ({ isOpen, onClose, onFilterChange }: FilterMenuProps) => {
             </Button>
             <Button
               onClick={onClose}
-              className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground"
+              className="w-full bg-gradient-to-r from-primary to-blue-500 hover:shadow-lg hover:shadow-primary/50 text-white font-semibold"
             >
-              Apply Filters
+              ✓ Apply Filters
             </Button>
           </div>
         </div>
