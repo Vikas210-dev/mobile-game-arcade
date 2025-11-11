@@ -20,11 +20,11 @@ const Layout = ({ children, onFilterChange }: LayoutProps) => {
   return (
     <div className="min-h-screen bg-background">
       <TopNav onMenuClick={() => setFilterOpen(true)} />
-      {/* <FilterMenu
+      <FilterMenu
         isOpen={filterOpen}
         onClose={() => setFilterOpen(false)}
         onFilterChange={handleFilterChange}
-      /> */}
+      />
       <main>{children}</main>
       <BottomNav />
     </div>
