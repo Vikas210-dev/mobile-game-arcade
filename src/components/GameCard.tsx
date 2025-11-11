@@ -17,6 +17,8 @@ const GameCard = ({ title, description, thumbnail, onPlay }: GameCardProps) => {
         <img
           src={thumbnail}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
         />
       </div>

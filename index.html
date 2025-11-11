@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>PlayVerse - Play Open Source HTML5 Games</title>
     <meta name="description" content="PlayVerse: Your mobile gaming portal for classic HTML5 and JavaScript games. Play 2048, Tetris, Flappy Bird, Snake, and more!" />
     <meta name="author" content="PlayVerse" />
@@ -12,6 +12,23 @@
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    
+    <style>
+      /* Prevent zoom and touch callouts on mobile */
+      body {
+        touch-action: pan-x pan-y;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Prevent double-tap zoom */
+      * {
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+      }
+    </style>
   </head>
 
   <body>

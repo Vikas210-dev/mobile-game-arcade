@@ -6,46 +6,86 @@ import gameFlappy from "@/assets/game-flappy.jpg";
 import gameSnake from "@/assets/game-snake.jpg";
 import gameRacer from "@/assets/game-racer.jpg";
 import gameMinesweeper from "@/assets/game-minesweeper.jpg";
+import gamePacman from "@/assets/pacman.jpg";
+import bikeRacing from "@/assets/bike_racing.png";
+import bowling from "@/assets/bowling.jpg";
+import bubble from "@/assets/bubble.png";
+import fruitChopper from "@/assets/fruit_chooper.png";
+import knifeAttack from "@/assets/knif_attack.png";
+import panda from "@/assets/panada.png";
+import rocket from "@/assets/rocket.png";
+import ship from "@/assets/ship.jpg";
+import landGame from "@/assets/land_game.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
 
   const games = [
     {
-      id: "2048",
-      title: "2048",
-      description: "Classic puzzle challenge",
-      thumbnail: game2048,
+      id: "hexgl",
+      title: "Rocket Racer",
+      description: "Futuristic racing game",
+      thumbnail: rocket, 
     },
     {
-      id: "tetris",
-      title: "Tetris",
-      description: "Stack and clear the lines",
-      thumbnail: gameTetris,
-    },
-    {
-      id: "flappy-bird",
-      title: "Flappy Bird",
+      id: "clumsy-bird",
+      title: "Clumsy Bird",
       description: "Tap to fly through pipes",
       thumbnail: gameFlappy,
     },
     {
-      id: "snake",
-      title: "Snake",
-      description: "Eat apples and grow longer",
-      thumbnail: gameSnake,
+      id: "pacman",
+      title: "Pac-Man",
+      description: "Classic arcade maze game",
+      thumbnail: gamePacman,
     },
     {
-      id: "car-racer",
-      title: "Car Racer",
-      description: "Race to the finish line",
-      thumbnail: gameRacer,
+      id: "ophog",
+      title: "OpHog",
+      description: "Hacker puzzle strategy game",
+      thumbnail: landGame,
     },
     {
-      id: "minesweeper",
-      title: "Minesweeper",
-      description: "Find all the mines",
-      thumbnail: gameMinesweeper,
+      id: "bike",
+      title: "Bike Racing",
+      description: "Race through challenging tracks",
+      thumbnail: bikeRacing,
+    },
+    {
+      id: "go-bowling",
+      title: "Go Bowling",
+      description: "Knock down pins in style",
+      thumbnail: bowling,
+    },
+    {
+      id: "hugeship",
+      title: "Huge Ship",
+      description: "Space adventure game",
+      thumbnail: ship,
+    },
+    {
+      id: "game-1",
+      title: "Fruit Chopper",
+      description: "Throw knives and hit targets",
+      thumbnail: fruitChopper,
+    },
+    {
+      id: "knife-attacks",
+      title: "Knife Attacks",
+      description: "Ultimate knife throwing game",
+      thumbnail: knifeAttack,
+    },
+    {
+      id: "3m",
+      title: "Burst Bubble",
+      description: "Fast-paced arcade game",
+      thumbnail: bubble,
+    },
+    {
+      id: "4-2",
+      title: "Jumping Panda",
+      description: "Puzzle challenge game",
+      thumbnail: panda,
     },
   ];
 
